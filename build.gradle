@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'c3p0:c3p0:0.9.1.2'
+    testCompile 'org.powermock:powermock-mockito-release-full:1.6.4'
+    testCompile 'org.zapodot:embedded-db-junit:1.0-RC1'
+    testCompile 'com.github.stefanbirkner:system-rules:1.16.0'
+    testCompile 'junit:junit:4.12'
+}
+
+mainClassName = 'com.bellatrix.logger.App'
+
